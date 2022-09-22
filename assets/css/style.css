@@ -214,4 +214,7 @@ footer {
   padding: 1rem 0;
   background-color: var(--colorPrincipal);
   color: var(--colorWhite);
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
 }
