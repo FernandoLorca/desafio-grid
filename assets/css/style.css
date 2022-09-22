@@ -3,7 +3,8 @@
   --colorWhite: #f7f7f9;
   --colorBtns: #41e2ba;
   --colorBtnsActive: #41d8b2;
-  --colorGrey: #bcbcbc;
+  --colorGreyDark: #c5c5c5;
+  --colorGrey: #f0f0f0;
   --fontFamily: "Cairo", sans-serif;
 }
 
@@ -124,6 +125,10 @@ aside ul li:first-child {
   text-decoration: underline;
 }
 
+aside ul li a span {
+  color: var(--colorGreyDark);
+}
+
 .productsWrapper {
   grid-area: productsWrapper;
   display: grid;
@@ -137,6 +142,7 @@ aside ul li:first-child {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: var(--colorGrey);
 }
 
 .productsWrapper
