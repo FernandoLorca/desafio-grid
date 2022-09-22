@@ -20,6 +20,12 @@ body {
   font-family: var(--fontFamily);
   color: var(--colorPrincipal);
   background-color: var(--colorWhite);
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+  height: 100vh;
 }
 
 *,
@@ -73,14 +79,6 @@ ul {
 
 .btn-primary:active {
   opacity: 0.75;
-}
-
-body {
-  display: grid;
-  grid-template-areas:
-    "header"
-    "main"
-    "footer";
 }
 
 header {
