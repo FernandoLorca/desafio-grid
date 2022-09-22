@@ -2,6 +2,7 @@
   --colorPrincipal: #2b2d42;
   --colorWhite: #f7f7f9;
   --colorBtns: #41e2ba;
+  --colorBtnsActive: #41d8b2;
   --colorGrey: #bcbcbc;
   --fontFamily: "Cairo", sans-serif;
 }
@@ -58,6 +59,19 @@ ul {
 
 .btn-primary {
   background-color: var(--colorBtns);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+.btn-primary:hover {
+  background-color: var(--colorBtnsActive);
+  color: var(--colorWhite);
+}
+
+.btn-primary:active {
+  opacity: 0.75;
 }
 
 header {
@@ -76,6 +90,7 @@ header h1 {
 main {
   display: grid;
   grid-template-areas: "aside productsWrapper";
+  grid-template-columns: 0.5fr 2fr;
   padding: 1rem;
 }
 
@@ -100,10 +115,76 @@ aside ul li:first-child {
   gap: 1rem;
   grid-template-areas:
     "product product product"
-    "product product product"
     "product product product";
 }
 
 .productsWrapper .productsWrapper__products {
-  background-color: var(--colorGrey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper1 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper2 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper3 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper4 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper5 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper
+  .productsWrapper__products
+  .productsWrapper__products-imgWrapper6 {
+  width: 100%;
+  height: 25rem;
+  background-image: url(../img/06.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.productsWrapper .productsWrapper__products h2 {
+  padding: 1rem 0;
+  font-size: 1.8rem;
 }
