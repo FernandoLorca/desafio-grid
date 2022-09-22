@@ -1,0 +1,109 @@
+:root {
+  --colorPrincipal: #2b2d42;
+  --colorWhite: #f7f7f9;
+  --colorBtns: #41e2ba;
+  --colorGrey: #bcbcbc;
+  --fontFamily: "Cairo", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 64%; /* 10px = 1rem */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  font-family: var(--fontFamily);
+  color: var(--colorPrincipal);
+  background-color: var(--colorWhite);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--colorPrincipal);
+  transition: all 200ms ease;
+}
+
+a:hover {
+  color: var(--colorBtns);
+}
+
+p {
+  padding: 0;
+  margin: 0;
+  font-family: var(--fontPrincipals);
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.btn-primary {
+  background-color: var(--colorBtns);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--colorWhite);
+  background-color: var(--colorPrincipal);
+  padding: 1.2rem 0;
+}
+
+header h1 {
+  font-size: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-areas: "aside productsWrapper";
+  padding: 1rem;
+}
+
+aside {
+  grid-area: aside;
+}
+
+aside ul li {
+  margin-bottom: 0.5rem;
+  margin-left: 2rem;
+}
+
+aside ul li:first-child {
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-decoration: underline;
+}
+
+.productsWrapper {
+  grid-area: productsWrapper;
+  display: grid;
+  gap: 1rem;
+  grid-template-areas:
+    "product product product"
+    "product product product"
+    "product product product";
+}
+
+.productsWrapper .productsWrapper__products {
+  background-color: var(--colorGrey);
+}
